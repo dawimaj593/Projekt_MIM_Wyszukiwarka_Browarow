@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.eventerest.Model.View.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_breweriesList"
+            app:destination="@id/breweriesList" />
+        <action
+            android:id="@+id/action_mainFragment_to_singleBreweryDetails"
+            app:destination="@id/singleBreweryDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/breweriesList"
+        android:name="com.example.eventerest.Model.View.BreweriesList"
+        android:label="fragment_breweries_list"
+        tools:layout="@layout/fragment_breweries_list" >
+        <action
+            android:id="@+id/action_breweriesList_to_singleBreweryDetails"
+            app:destination="@id/singleBreweryDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleBreweryDetails"
+        android:name="com.example.eventerest.Model.View.SingleBreweryDetails"
+        android:label="fragment_single_brewery_details"
+        tools:layout="@layout/fragment_single_brewery_details" />
+
+</navigation>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".Model.View.MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_breweries_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/baloo_bhaijaan"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/search_by_city_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/alata"
+            android:shadowColor="#934747"
+            android:text="@string/show_breweries_by_city"
+
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#872626"
+            android:textColorHint="#BF1616"
+            android:textColorLink="#A86060"
+            android:textSize="16sp"
+            app:backgroundTint="@color/grey"
+            app:strokeWidth="1.5dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/search_by_name_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/alata"
+            android:text="@string/show_breweries_by_name"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#872626"
+            android:textColorHint="#BF1616"
+            android:textColorLink="#A86060"
+            app:backgroundTint="@color/grey"
+
+            />
+
+        <Button
+            android:id="@+id/random_brewery_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/alata"
+            android:text="@string/show_random_brewery"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#872626"
+            android:textColorHint="#BF1616"
+            android:textColorLink="#A86060"
+            app:backgroundTint="@color/grey" />
+
+    </LinearLayout>
+
+</FrameLayout>
